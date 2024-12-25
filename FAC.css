@@ -1,0 +1,56 @@
+body {
+    font-family: "Helvetica", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color: #FAFAFA;
+}
+
+.coin-container {
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+}
+
+.coin {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 1s ease;
+}
+
+.coin .front,
+.coin .back {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    backface-visibility: hidden;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+}
+
+.front {
+    background-image: url("Coins/UAH1.png");
+}
+
+.back {
+    background-image: url("Coins/UAH2.png");
+    transform: rotateY(180deg);
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #FAFAFA;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 60px auto;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
