@@ -14,7 +14,7 @@ button.addEventListener("click", () => {
         const landingRotationX = randomSide === "front" ? 0 : 180;
         const landingRotationY =  Math.random() * 5;
 
-        coin.style.transition = "transform 1s cubic-bezier(0, 0.1, 0.5, 1)";
+        coin.style.transition = "transform 1s ease";
         coin.style.transform = `translateY(0px) rotateX(${landingRotationX}deg) rotateY(${landingRotationY}deg)`;
     }, 1400);
 });
