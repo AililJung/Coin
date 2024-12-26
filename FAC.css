@@ -37,7 +37,7 @@ body {
 
 .back {
     background-image: url("Coins/UAH2.png");
-    transform: rotateY(180deg);
+    transform: rotateX(180deg);
 }
 
 button {
